@@ -1,0 +1,62 @@
+.tipsgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.tipline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.container {
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 50%;
+    transition: 50ms;
+}
+
+.container:hover {
+    scale: 101%;
+    transform: translateY(-5%);
+}
+
+.sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.num {
+    border: 1px solid;
+    border-radius: 25px;
+    font-family: monospace;
+    padding: 5px 10px;
+}
+
+.icon {
+    justify-self: flex-end;
+    width: 25px;
+    height: 25px;
+}
+
+.text {
+    margin: 0px;
+}
+
+.comm {
+    font-family: monospace;
+    color: #36324f;
+}
+
+.desc {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6b6b6b;
+}
