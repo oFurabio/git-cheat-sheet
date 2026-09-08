@@ -1,20 +1,19 @@
-const comandos = document.querySelectorAll(".comm");
+const comandos = document.querySelectorAll(".command");
 
 comandos.forEach((comando) => {
-	comando.addEventListener("click", async () => {
-		const textoOriginal = comando.textContent;
+  comando.addEventListener("click", async () => {
+    const textoOriginal = comando.textContent;
 
-		try {
-			await navigator.clipboard.writeText(textoOriginal);
+    try {
+      await navigator.clipboard.writeText(textoOriginal);
 
-			comando.textContent = "✓ Copiado!";
+      comando.textContent = "Copiado!";
 
-			setTimeout(() => {
-				comando.textContent = textoOriginal;
-			}, 1500);
-
-		} catch (erro) {
-			console.error("Não foi possível copiar:", erro);
-		}
-	});
+      setTimeout(() => {
+        comando.textContent = textoOriginal;
+      }, 1500);
+    } catch (erro) {
+      console.error("Não foi possível copiar:", erro);
+    }
+  });
 });

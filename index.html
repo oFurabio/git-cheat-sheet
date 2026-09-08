@@ -1,146 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guia de Bolso Git</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h2>Guia de Bolso</h2>
-        <div>
-            <h1>Git, sem mistério</h1>
-            <h3> Os comandos essenciais para começar, salvar<br>e sincronizar seu projeto</h3>
-        </div>
+      <h2>Guia de Bolso</h2>
+      <div>
+        <h1>Git, sem mistério</h1>
+        <h3>
+          Os comandos essenciais para começar, salvar<br />e sincronizar seu
+          projeto
+        </h3>
+      </div>
     </header>
-    
-    <main>
-        <h2>Comandos essenciais</h2>
-        <article class="tipsgroup">
-            <div class="tipline">
-                <div class="container">
-                    <div class="sub">
-                        <h3 class="num">01</h3>
-                        <svg class="icon">
-                            <use href="assets/circle-plus.svg"></use>
-                        </svg>
-                    </div>
-                    
-                    <div class="text">
-                        <h3 class="comm">git init</h3>
-                        <p class="desc">Inicializa um repositório Git local.</p>
-                    </div>
-                </div>
-                
-                <div class="container">
-                    <div class="sub">
-                        <h3 class="num">02</h3>
-                        <svg class="icon">
-                            <use href="assets/circle-plus.svg"></use>
-                        </svg>
-                    </div>
-                    
-                    <div class="text">
-                        <h3 class="comm">git add .</h3>
-                        <p class="desc">Adiciona alterações para dar commit.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tipline">
-                <div class="container">
-                    <div class="sub">
-                        <h3 class="num">03</h3>
-                        <svg class="icon"><use href="assets/circle-plus.svg"></use></svg>
-                    </div>
-                    
-                    <div class="text">
-                        <h3 class="comm">git commit -m "[Mensagem de Commit]"</h3>
-                        <p class="desc">Salva as alterações com uma mensagem descritiva.</p>
-                    </div>
-                </div>
-                
-                <div class="container">
-                    <div class="sub">
-                        <h3 class="num">04</h3>
-                        <svg class="icon">
-                            <use href="assets/circle-plus.svg"></use>
-                        </svg>
-                    </div>
-                    
-                    <div class="text">
-                        <h3 class="comm">git push -u origin main</h3>
-                        <p class="desc">Envia commits ao repositório remoto.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tipline">
-                <div class="container">
-                    <div class="sub">
-                        <h3 class="num">05</h3>
-                        <svg class="icon"><use href="assets/circle-plus.svg"></use></svg>
-                    </div>
-                    
-                    <div class="text">
-                        <h3 class="comm">git clone [link do repositório]</h3>
-                        <p class="desc">Copia um repositório remoto para a máquina.</p>
-                    </div>
-                </div>
-                
-                <div class="container">
-                    <div class="sub">
-                        <h3 class="num">06</h3>
-                        <svg class="icon">
-                            <use href="assets/circle-plus.svg"></use>
-                        </svg>
-                    </div>
-                    
-                    <div class="text">
-                        <h3 class="comm">git fetch</h3>
-                        <p class="desc">Verifica se o repositório remoto contém atualizações.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tipline">
-                <div class="container">
-                    <div class="sub">
-                        <h3 class="num">07</h3>
-                        <svg class="icon"><use href="assets/circle-plus.svg"></use></svg>
-                    </div>
-                    
-                    <div class="text">
-                        <h3 class="comm">git pull</h3>
-                        <p class="desc">Baixa e aplica as atualizações do repositório remoto.</p>
-                    </div>
-                </div>
-                
-                <div class="container">
-                    <div class="sub">
-                        <h3 class="num">08</h3>
-                        <svg class="icon">
-                            <use href="assets/circle-plus.svg"></use>
-                        </svg>
-                    </div>
-                    
-                    <div class="text">
-                        <h3 class="comm">git remote add origin [link do respositório remoto]</h3>
-                        <p class="desc">Conecta o repositório remoto ao repositório na máquina.</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </main>
-    
-    <footer>
-        <hr>
-        <p>safado</p>
-    </footer>
-</body>
 
-<script src="app.js"></script>
+    <main>
+      <h2>Comandos essenciais</h2>
+      <article class="cardsgroup">
+        <div class="cardsline">
+          <div class="card">
+            <div class="cardtitle">
+              <h3 class="cardnumber">01</h3>
+              <svg class="icon">
+                <use href="assets/icon.svg"></use>
+              </svg>
+            </div>
+
+            <div class="cardtext">
+              <h3 class="command">git init</h3>
+              <p class="description">Inicializa um repositório Git local.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardtitle">
+              <h3 class="cardnumber">02</h3>
+              <svg class="icon">
+                <use href="assets/icon.svg"></use>
+              </svg>
+            </div>
+
+            <div class="cardtext">
+              <h3 class="command">git add .</h3>
+              <p class="description">Adiciona alterações para dar commit.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardtitle">
+              <h3 class="cardnumber">03</h3>
+              <svg class="icon"><use href="assets/icon.svg"></use></svg>
+            </div>
+
+            <div class="cardtext">
+              <h3 class="command">git commit -m "[Mensagem de Commit]"</h3>
+              <p class="description">
+                Salva as alterações com uma mensagem descritiva.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardtitle">
+              <h3 class="cardnumber">04</h3>
+              <svg class="icon">
+                <use href="assets/icon.svg"></use>
+              </svg>
+            </div>
+
+            <div class="cardtext">
+              <h3 class="command">git push -u origin main</h3>
+              <p class="description">Envia commits ao repositório remoto.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="cardsline">
+          <div class="card">
+            <div class="cardtitle">
+              <h3 class="cardnumber">05</h3>
+              <svg class="icon"><use href="assets/icon.svg"></use></svg>
+            </div>
+
+            <div class="cardtext">
+              <h3 class="command">git clone [link do repositório]</h3>
+              <p class="description">Copia um repositório remoto para a máquina.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardtitle">
+              <h3 class="cardnumber">06</h3>
+              <svg class="icon">
+                <use href="assets/icon.svg"></use>
+              </svg>
+            </div>
+
+            <div class="cardtext">
+              <h3 class="command">git fetch</h3>
+              <p class="description">
+                Verifica se o repositório remoto contém atualizações.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardtitle">
+              <h3 class="cardnumber">07</h3>
+              <svg class="icon"><use href="assets/icon.svg"></use></svg>
+            </div>
+
+            <div class="cardtext">
+              <h3 class="command">git pull</h3>
+              <p class="description">
+                Baixa e aplica as atualizações do repositório remoto.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="cardtitle">
+              <h3 class="cardnumber">08</h3>
+              <svg class="icon">
+                <use href="assets/icon.svg"></use>
+              </svg>
+            </div>
+
+            <div class="cardtext">
+              <h3 class="command">
+                git remote add origin [link do respositório]
+              </h3>
+              <p class="description">
+                Conecta o repositório remoto ao repositório na máquina.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <hr />
+      <p>
+        Use mensagens de commit curtas, claras e escritas no imperativo.
+      </p>
+    </footer>
+  </body>
+
+  <script src="app.js"></script>
 </html>
