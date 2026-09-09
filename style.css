@@ -10,6 +10,7 @@ body {
   background-color: #e9f8ff;
   padding-inline: 50px;
   color: #16425b;
+  font-size: x-large;
 }
 
 header {
@@ -70,7 +71,7 @@ main h2 {
   border: 1px solid black;
   border-radius: 25px;
   margin: 10px;
-  padding: 10px;
+  padding: 20px 15px;
   width: calc(25% - 20px);
   height: 200px;
   transition-duration: 100ms;
@@ -78,6 +79,36 @@ main h2 {
   flex-direction: column;
   font-family: monospace;
   background-color: #fafeff;
+}
+
+.b {
+  background-color: #f0fbff;
+}
+
+.b .cardnumber {
+  background-color: #cceef9;
+  border: 1px solid #446b79;
+  color: #295261;
+}
+
+.p {
+  background-color: #f3f5ff;
+}
+
+.p .cardnumber {
+  background-color: #dfe5ff;
+  border: 1px solid #515b8a;
+  color: #283057;
+}
+
+.y {
+  background-color: #fff8ed;
+}
+
+.y .cardnumber {
+  background-color: #ffe5bd;
+  border: 1px solid #a78759;
+  color: #664b26;
 }
 
 .card:hover {
@@ -117,9 +148,15 @@ main h2 {
 
 .command {
   cursor: pointer;
-  background-color: #e1f5ff;
-  border-radius: 4px;
-  padding: 2px 15px;
+  border: 1px solid snow;
+  background-color: #00000015;
+  width: fit-content;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.command:hover {
+  box-shadow: 1px 2px 1px #c3d2d4;
 }
 
 .description {
