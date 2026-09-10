@@ -76,6 +76,7 @@ main h2 {
   background-color: #fafeff;
   padding: 5px 10px;
   gap: 10px;
+  height: fit-content;
 }
 
 .b {
