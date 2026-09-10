@@ -8,18 +8,19 @@ body {
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
   background-color: #e9f8ff;
-  padding-inline: 50px;
   color: #16425b;
-  font-size: x-large;
+  font-size: large;
+  padding: 10px 10px;
 }
 
 header {
   background-color: #ffffff;
-  border-radius: 40px;
-  margin: 30px 50px;
-  padding: 30px 50px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
+  padding: 10px 15px;
+  height: fit-content;
+  margin-bottom: 15px;
 }
 
 header h2 {
@@ -27,16 +28,15 @@ header h2 {
   background-color: #d8f2ee;
   color: #205b6b;
   font-weight: 300;
-  padding: 5px 20px;
-  margin-bottom: 20px;
   border-radius: 25px;
   text-transform: uppercase;
+  padding: 5px 15px;
+  align-self: center;
 }
 
 header div {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 header h3 {
@@ -45,40 +45,37 @@ header h3 {
 }
 
 main {
-  height: 70vh;
   display: flex;
   flex-direction: column;
   margin-block: auto;
   justify-content: center;
-  gap: 15px;
 }
 
 main h2 {
-  padding-left: 25px;
+  align-self: center;
 }
 
 .cardsgroup {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .cardsline {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card {
   border: 1px solid black;
-  border-radius: 25px;
-  margin: 10px;
-  padding: 20px 15px;
-  width: calc(25% - 20px);
-  height: 200px;
-  transition-duration: 100ms;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   font-family: monospace;
   background-color: #fafeff;
+  padding: 5px 10px;
+  gap: 10px;
 }
 
 .b {
@@ -111,23 +108,18 @@ main h2 {
   color: #664b26;
 }
 
-.card:hover {
-  transform: translateY(-2%);
-  box-shadow: 0px 5px 3px #c3d2d4;
-}
-
 .cardtitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: calc(25% - 20px);
+  height: 25%;
 }
 
 .cardnumber {
   border: 1px solid #86b0c5;
   background-color: #e1f5ff;
-  border-radius: 20px;
-  padding: 5px 10px;
+  border-radius: 100%;
+  padding: 5px;
 }
 
 .icon {
@@ -140,10 +132,9 @@ main h2 {
 .cardtext {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  margin-block: auto;
-  padding-inline: 10px;
-  gap: 20px;
+  justify-content: flex-start;
+  height: 75%;
+  gap: 5px;
 }
 
 .command {
@@ -152,14 +143,93 @@ main h2 {
   background-color: #00000015;
   width: fit-content;
   border-radius: 15px;
-  padding: 5px 10px;
-}
-
-.command:hover {
-  box-shadow: 1px 2px 1px #c3d2d4;
+  padding: 3px 10px;
 }
 
 .description {
   color: #54758a;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .cardsline {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(50% - 30px);
+    height: 20vh;
+  }
+
+  header h2 {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    height: 65vh;
+  }
+
+  main h2 {
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .cardsgroup {
+    height: fit-content;
+    gap: 15px;
+  }
+
+  .cardsline {
+    justify-content: space-around;
+    gap: 15px;
+  }
+
+  .card {
+    width: calc(25% - 45px);
+    height: 25vh;
+    transition: 200ms;
+  }
+
+  .cardnumber {
+    padding: 5px 10px;
+    border-radius: 30px;
+  }
+
+  .card:hover {
+    scale: 101%;
+    transform: translateY(-2%);
+    box-shadow: 0px 5px 3px #c3d2d4;
+  }
+
+  header {
+    padding: 20px 35px;
+    font-size: larger;
+  }
+
+  header h2 {
+    align-self: flex-start;
+  }
+
+  header div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  body {
+    font-size: x-large;
+  }
+
+  main {
+    height: 75vh;
+  }
 }
